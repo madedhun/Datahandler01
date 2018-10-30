@@ -20,13 +20,13 @@ namespace WindowsFormsApp1
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
             Application.Run(new Form1());
-            Thread t = new Thread(Adatolvaso);
+            Thread t = new Thread(Datareader);
             t.Start();
 
         }
 
 
-        static void Adatolvaso()
+        static void Datareader()
         {
 
             SerialPort mySerialPort = new SerialPort("COM1");
@@ -44,7 +44,7 @@ namespace WindowsFormsApp1
             }
             catch
             {
-                Console.WriteLine("hibás Portot adtál meg..." + mySerialPort.PortName);
+                Console.WriteLine("Wrong port..." + mySerialPort.PortName);
             }
 
         }
