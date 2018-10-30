@@ -16,5 +16,31 @@ namespace WindowsFormsApp1
         {
             InitializeComponent();
         }
+
+        private void Form1_Load(object sender, EventArgs e)
+        {
+
+        }
+
+        private void textBox1_MouseClick(object sender, MouseEventArgs e)
+        {
+            
+            if (openFileDialog1.ShowDialog() == DialogResult.OK)
+            {
+                //Get the path of specified file
+                var filePath = openFileDialog1.FileName;
+
+                textBox1.Text = filePath.ToString();
+                               
+            }
+
+        }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+         
+
+         
+        }
     }
 }
