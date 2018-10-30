@@ -68,6 +68,9 @@ namespace WindowsFormsApp1
 
         }
 
-
+        public static void Iamhere()
+        {
+            //MassageBox.Show("I am here now");
+        }
     }
 }
