@@ -24,23 +24,7 @@ namespace WindowsFormsApp1
 
         private void textBox1_MouseClick(object sender, MouseEventArgs e)
         {
-            
-            if (openFileDialog1.ShowDialog() == DialogResult.OK)
-            {
-                //Get the path of specified file
-                var filePath = openFileDialog1.FileName;
 
-                textBox1.Text = filePath.ToString();
-                               
-            }
-
-        }
-
-        private void button1_Click(object sender, EventArgs e)
-        {
-         
-
-         
         }
 
         private void button2_Click(object sender, EventArgs e)
@@ -49,5 +33,13 @@ namespace WindowsFormsApp1
 
          
         }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+
+            Program.Testinsert();
+        }
+
+      
     }
 }
